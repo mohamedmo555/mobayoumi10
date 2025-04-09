@@ -44,19 +44,29 @@ header {
   margin-left: 30px;
 }
 
-.works, .reviews, .contact {
-  padding: 40px;
-  text-align: center;
+.works-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
 }
 
-.work-buttons .btn {
-  margin: 10px;
-  padding: 10px 20px;
-  background: #3498db;
+.works-buttons button {
+  background-color: #2196f3;
   color: white;
-  text-decoration: none;
-  border-radius: 8px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
 }
+
+.works-buttons button:hover {
+  background-color: #1976d2;
+}
+
 
 .slider {
   position: relative;
