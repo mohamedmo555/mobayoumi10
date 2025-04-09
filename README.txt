@@ -1,0 +1,1 @@
+ارفع مجلد الموقع على GitHub Repo ثم فعل GitHub Pages من settings، واختار الفرع الرئيسي (main).

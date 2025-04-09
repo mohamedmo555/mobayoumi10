@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>Mo.Bayoumi - الصفحة الرئيسية</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <h1 class="logo">Mo.Bayoumi</h1>
+    <nav class="sidebar">
+      <ul>
+        <li><a href="#about">من أنا</a></li>
+        <li><a href="#works">أعمالي</a></li>
+        <li><a href="#reviews">التقييمات</a></li>
+        <li><a href="#contact">تواصل معي</a></li>
+        <li><a href="blog.html">المدونة</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about" class="about">
+    <img src="images/myphoto.jpg" alt="صورتي" class="profile-pic">
+    <div class="bio">
+      <h2>من هو Mo.Bayoumi؟</h2>
+      <p>محرر فيديوهات، مصمم جرافيك ومصور مبتكر. أسعى لبناء محتوى تعليمي وديني احترافي يخدم الناس ويبني تأثيرًا طويل الأمد.</p>
+    </div>
+  </section>
+
+  <section id="works" class="works">
+    <h2>أعمالي</h2>
+    <div class="work-buttons">
+      <a href="#montage" class="btn">المونتاج</a>
+      <a href="#graphics" class="btn">الجرافيك</a>
+      <a href="#photography" class="btn">التصوير</a>
+    </div>
+  </section>
+
+  <section id="reviews" class="reviews">
+    <h2>آراء المتابعين</h2>
+    <div class="slider">
+      <div class="slides">
+        <img src="images/review1.jpg" class="slide active" alt="تقييم 1">
+        <img src="images/review2.jpg" class="slide" alt="تقييم 2">
+        <img src="images/review3.jpg" class="slide" alt="تقييم 3">
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>تواصل معي</h2>
+    <form>
+      <input type="text" name="name" placeholder="الاسم" required>
+      <input type="email" name="email" placeholder="البريد الإلكتروني" required>
+      <input type="tel" name="phone" placeholder="رقم الهاتف" required>
+      <textarea name="message" placeholder="اكتب رسالتك..." rows="5" required></textarea>
+      <button type="submit">إرسال</button>
+    </form>
+  </section>
+
+  <footer>
+    <h3>تابعني على:</h3>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-tiktok"></i></a>
+    </div>
+    <p>© 2025 Mo.Bayoumi - جميع الحقوق محفوظة</p>
+  </footer>
+
+  <script>
+    let slides = document.querySelectorAll('.slide');
+    let index = 0;
+    setInterval(() => {
+      slides[index].classList.remove('active');
+      index = (index + 1) % slides.length;
+      slides[index].classList.add('active');
+    }, 5000);
+  </script>
+
+</body>
+</html>
