@@ -13,20 +13,33 @@
 </head>
 <body>
 
-  <header>
-    <h1 class="logo">Mo.Bayoumi</h1>
-    <p>محمد بيومي</p>
-    <nav class="sidebar">
-      <ul>
-        <li><a href="#about">من أنا</a></li>
-        <li><a href="#works">أعمالي</a></li>
-        <li><a href="#reviews">التقييمات</a></li>
-        <li><a href="#contact">تواصل معي</a></li>
-        <li><a href="blog.html">المدونة</a></li>
-      </ul>
-    </nav>
+  <header style="background-color: #2c3e50; color: white; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center; direction: rtl;">
+    <!-- الشمال (Mo.Bayoumi) -->
+    <div style="text-align: right;">
+      <h1 style="margin: 0; font-size: 22px;">Mo.Bayoumi</h1>
+      <p style="margin: 0; font-size: 14px;">محمد بيومي</p>
+    </div>
+  
+    <!-- اليمين (زر المينيو) -->
+    <div style="position: relative;">
+      <button onclick="toggleMenu()" style="background: none; border: none; color: white; font-size: 24px; cursor: pointer;">☰</button>
+      <div id="menu" style="display: none; position: absolute; top: 30px; left: 0; background-color: #34495e; border-radius: 6px; padding: 10px; min-width: 150px;">
+        <a href="#about" style="display: block; color: white; text-decoration: none; padding: 5px;">من أنا</a>
+        <a href="#works" style="display: block; color: white; text-decoration: none; padding: 5px;">أعمالي</a>
+        <a href="#reviews" style="display: block; color: white; text-decoration: none; padding: 5px;">التقييمات</a>
+        <a href="#contact" style="display: block; color: white; text-decoration: none; padding: 5px;">تواصل معي</a>
+        <a href="blog.html" style="display: block; color: white; text-decoration: none; padding: 5px;">المدونة</a>
+      </div>
+    </div>
   </header>
-
+  
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("menu");
+      menu.style.display = (menu.style.display === "none" || menu.style.display === "") ? "block" : "none";
+    }
+  </script>
+  
   <section id="about" class="about">
     <img src="images/myphoto.jpg" alt="صورتي" class="profile-pic">
     <div class="bio">
