@@ -3,13 +3,13 @@ body {
   font-family: 'Tajawal', sans-serif;
   margin: 0;
   padding: 0;
-  background: #FFF1D5;
-  color: #000000;
+  background: #c59d4c;
+  color: #4d2929;
 }
 
 header {
-  background: #BDDDE4;
-  color: #FFF1D5;
+  background: #00bae4;
+  color: #000000;
   padding: 1px;
   text-align: center;
 }
