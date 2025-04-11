@@ -263,8 +263,8 @@ footer {
 }
 
 .profile-img {
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 0px;
@@ -272,8 +272,8 @@ footer {
 }
 
 .name-title {
-  font-size: 36px;
-  margin-bottom: 15px;
+  font-size: 30px;
+  margin-bottom: 12.5px;
   color: #000000;
 }
 
