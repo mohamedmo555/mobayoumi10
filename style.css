@@ -85,9 +85,9 @@ header {
   background-color: #2196f3;
   color: white;
   border: none;
-  padding: 10px 20px;
-  border-radius: 12px;
-  font-size: 16px;
+  padding: 20px 40px;
+  border-radius: 24px;
+  font-size: 35px;
   cursor: pointer;
   transition: 0.3s;
 }
