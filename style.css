@@ -1,188 +1,65 @@
-/* style.css */
+/* ========== الأساسيات ========== */
+:root {
+  --main-bg: #D4C9BE;
+  --main-color: #4d2929;
+  --accent: #123458;
+  --hover-accent: #1976d2;
+  --header-bg: #333;
+  --header-text: #fff;
+  --btn-bg: #2c3e50;
+  --btn-text: #fff;
+  --gold: #daa520;
+  --highlight: #e22d2d;
+  --blog-header-bg: #2c3e50;
+}
 
+body {
+  font-family: 'Tajawal', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: var(--main-bg);
+  color: var(--main-color);
+}
+
+/* ========== العناوين والأقسام العامة ========== */
+header {
+  background: var(--header-bg);
+  color: var(--header-text);
+  padding: 20px;
+  text-align: center;
+}
+header a {
+  color: #ffd700;
+  text-decoration: none;
+  display: block;
+  margin-top: 10px;
+}
+
+/* ========== قسم التعريف ========== */
 .about-section {
   text-align: center;
   padding: 50px 20px;
-  background-color: #c59d4c; /* ممكن تغيره حسب ثيم موقعك */
+  background-color: var(--main-bg);
 }
-
 .profile-img {
   width: 350px;
   height: 350px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 0px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-
 .name-title {
   font-size: 30px;
-  margin-bottom: 12.5px;
-  color: #000000;
+  margin-bottom: 12px;
 }
-
 .about-description {
-  max-width: 7500px;
-  margin: 0 auto;
+  max-width: 750px;
+  margin: auto;
   font-size: 20px;
-  line-height: 1.3;
-  color: #000000;
-}
-body {
-  font-family: 'Tajawal', sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #c59d4c;
-  color: #4d2929;
+  line-height: 1.6;
 }
 
-header {
-  background: #00bae4;
-  color: #000000;
-  padding: 1px;
-  text-align: center;
-}
-
-.logo {
-  margin: 0;
-}
-
-.sidebar ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
-
-.sidebar ul li a {
-  color: rgb(128, 51, 51);
-  text-decoration: none;
-}
-
-.about {
-  display: flex;
-  align-items: center;
-  padding: 40px;
-}
-
-.profile-pic {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin-left: 30px;
-}
-
-.works-buttons {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 20px;
-}
-
-.works-buttons button {
-  background-color: #2196f3;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 12px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.works-buttons button:hover {
-  background-color: #1976d2;
-}
-
-
-.slider {
-  position: relative;
-  max-width: 400px;
-  margin: auto;
-}
-
-.slide {
-  display: none;
-  width: 100%;
-}
-
-.slide.active {
-  display: block;
-}
-
-.contact form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  max-width: 500px;
-  margin: auto;
-}
-
-form input, form textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-}
-
-form button {
-  background: #2c3e50;
-  color: white;
-  padding: 10px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #eee;
-}
-
-.social-icons a {
-  color: #333;
-  margin: 0 10px;
-  font-size: 24px;
-}
-
-.blog-page header {
-  background: #2c3e50;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
-
-.blog-container {
-  padding: 20px;
-  max-width: 900px;
-  margin: auto;
-}
-
-.blog-post {
-  background: #e22d2d;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.blog-post h2 {
-  color: #2c3e50;
-}
-
-.back-btn {
-  background: #3498db;
-  padding: 10px;
-  display: inline-block;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  margin-top: 10px;
-}
-
-
+/* ========== الشريط الجانبي ========== */
 .sidebar {
   background: #f1f1f1;
   padding: 10px;
@@ -199,7 +76,7 @@ footer {
   margin: 0;
 }
 .sidebar ul li a {
-  color: #4d2929;
+  color: var(--main-color);
   text-decoration: none;
   padding: 8px 12px;
   border-radius: 6px;
@@ -208,6 +85,30 @@ footer {
 .sidebar ul li a:hover {
   background-color: #ccc;
 }
+
+/* ========== أزرار الأعمال ========== */
+.works-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+.works-buttons button {
+  background-color: var(--accent);
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.works-buttons button:hover {
+  background-color: var(--hover-accent);
+}
+
+/* ========== السلايدر ========== */
 .slider-container {
   max-width: 800px;
   margin: auto;
@@ -216,25 +117,20 @@ footer {
   border-radius: 10px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
-
 .slider {
   position: relative;
 }
-
 .slide {
   display: none;
   text-align: center;
 }
-
 .slide.active {
   display: block;
 }
-
 .slide img {
   width: 100%;
   height: auto;
 }
-
 .caption {
   background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
@@ -245,7 +141,6 @@ footer {
   text-align: center;
   font-size: 18px;
 }
-
 .navigation {
   position: absolute;
   top: 50%;
@@ -254,7 +149,6 @@ footer {
   justify-content: space-between;
   transform: translateY(-50%);
 }
-
 .navigation button {
   background-color: rgba(0,0,0,0.5);
   color: white;
@@ -264,22 +158,132 @@ footer {
   cursor: pointer;
   border-radius: 4px;
 }
-
 .dots {
   text-align: center;
   padding: 10px 0;
 }
-
 .dot {
-  display: inline-block;
   width: 10px;
   height: 10px;
   margin: 5px;
   background-color: #bbb;
   border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+.dot.active {
+  background-color: #717171;
+}
+
+/* ========== نموذج التواصل ========== */
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+  margin: auto;
+}
+form input, form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+form button {
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
   cursor: pointer;
 }
 
-.dot.active {
-  background-color: #717171;
+/* ========== الفوتر ========== */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: var(--main-bg);
+}
+.social-icons a {
+  color: #333;
+  margin: 0 10px;
+  font-size: 24px;
+}
+
+/* ========== مدونة ========== */
+.blog-page header {
+  background: var(--blog-header-bg);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+.blog-container {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+.blog-post {
+  background: var(--highlight);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.blog-post h2 {
+  color: var(--blog-header-bg);
+}
+.back-btn {
+  background: #3498db;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* ========== جريد الصور والفيديوهات ========== */
+.videos-grid,
+.works-grid,
+.photos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+.videos-grid {
+  background-color: var(--gold);
+}
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  background: #000;
+}
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 16px;
+}
+.works-grid img,
+.photos-grid img {
+  width: 100%;
+  border-radius: 10px;
+  height: auto;
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 768px) {
+  .videos-grid {
+    padding: 10px;
+  }
+  header {
+    font-size: 16px;
+  }
 }
