@@ -12,14 +12,14 @@
 <body>
 
   <!-- الهيدر -->
-  <header style="background-color: #123458; color: #f1efec; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center;">
-    <div style="text-align: right;">
-      <h1 style="margin: 0; font-size: 22px;">Mo.Bayoumi</h1>
-      <p style="margin: 0; font-size: 14px;">محمد بيومي</p>
+  <header>
+    <div class="logo-container">
+      <h1>Mo.Bayoumi</h1>
+      <p>محمد بيومي</p>
     </div>
     <div style="position: relative;">
-      <button onclick="toggleMenu()" style="background: none; border: none; color: #f1efec; font-size: 24px; cursor: pointer;">☰</button>
-      <div id="menu" style="display: none; position: absolute; top: 30px; left: 0; background-color: #34495e; border-radius: 6px; padding: 10px; min-width: 150px;">
+      <button onclick="toggleMenu()" class="menu-button">☰</button>
+      <div id="menu">
         <a href="#about">من أنا</a>
         <a href="#works">أعمالي</a>
         <a href="#reviews">التقييمات</a>
@@ -55,7 +55,6 @@
     <h2>آراء المتابعين</h2>
     <div class="slider-container">
       <div class="slider">
-        <!-- الشرائح -->
         <div class="slide active"><img src="images/review1.jpg" alt=""></div>
         <div class="slide"><img src="images/review2.jpg" alt=""></div>
         <div class="slide"><img src="images/review3.jpg" alt=""></div>
@@ -65,13 +64,11 @@
         <div class="slide"><img src="images/review7.jpg" alt=""></div>
         <div class="slide"><img src="images/review8.jpg" alt=""></div>
 
-        <!-- الأسهم -->
         <div class="navigation">
           <button class="prev">&#10094;</button>
           <button class="next">&#10095;</button>
         </div>
 
-        <!-- النقاط -->
         <div class="dots">
           <span class="dot active" data-index="0"></span>
           <span class="dot" data-index="1"></span>
