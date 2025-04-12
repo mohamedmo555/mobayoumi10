@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -6,190 +5,157 @@
   <title>Mo.Bayoumi - الصفحة الرئيسية</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google-site-verification" content="ZVWKZGIOuFr9Uw4z2J6fEfrR-h-kZhoVxnj4iUHqv5c" />
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header style="background-color: #123458; color: #f1efec; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center; direction: rtl;">
-  <!-- الشمال (Mo.Bayoumi) -->
-  <div style="text-align: right;">
-    <h1 style="margin: 0; font-size: 22px;">Mo.Bayoumi</h1>
-    <p style="margin: 0; font-size: 14px;">محمد بيومي</p>
-  </div>
-
-  <!-- اليمين (زر المينيو) -->
-  <div style="position: relative;">
-    <button onclick="toggleMenu()" style="background: none; border: none; color: #f1efec; font-size: 24px; cursor: pointer;">☰</button>
-    <div id="menu" style="display: none; position: absolute; top: 30px; left: 0; background-color: #34495e; border-radius: 6px; padding: 10px; min-width: 150px;">
-      <a href="#about" style="display: block; color: white; text-decoration: none; padding: 5px;">من أنا</a>
-      <a href="#works" style="display: block; color: white; text-decoration: none; padding: 5px;">أعمالي</a>
-      <a href="#reviews" style="display: block; color: white; text-decoration: none; padding: 5px;">التقييمات</a>
-      <a href="#contact" style="display: block; color: white; text-decoration: none; padding: 5px;">تواصل معي</a>
-      <a href="blog.html" style="display: block; color: white; text-decoration: none; padding: 5px;">المدونة</a>
+  <!-- الهيدر -->
+  <header style="background-color: #123458; color: #f1efec; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center;">
+    <div style="text-align: right;">
+      <h1 style="margin: 0; font-size: 22px;">Mo.Bayoumi</h1>
+      <p style="margin: 0; font-size: 14px;">محمد بيومي</p>
     </div>
-  </div>
-</header>
+    <div style="position: relative;">
+      <button onclick="toggleMenu()" style="background: none; border: none; color: #f1efec; font-size: 24px; cursor: pointer;">☰</button>
+      <div id="menu" style="display: none; position: absolute; top: 30px; left: 0; background-color: #34495e; border-radius: 6px; padding: 10px; min-width: 150px;">
+        <a href="#about">من أنا</a>
+        <a href="#works">أعمالي</a>
+        <a href="#reviews">التقييمات</a>
+        <a href="#contact">تواصل معي</a>
+        <a href="blog.html">المدونة</a>
+      </div>
+    </div>
+  </header>
 
-<script>
-  function toggleMenu() {
-    const menu = document.getElementById("menu");
-    menu.style.display = (menu.style.display === "none" || menu.style.display === "") ? "block" : "none";
-  }
-</script>
+  <!-- عني -->
+  <section id="about" class="about-section">
+    <img src="images/myphoto.jpg" alt="صورتي" class="profile-img">
+    <h2 class="name-title">محمد بيومي | Video Editor</h2>
+    <p class="about-description">
+      أُتقن فن المونتاج وتحويل الأفكار إلى فيديوهات جذّابة وملهمة. أعمل على تحرير الفيديوهات التعليمية، التسويقية، والتوثيقية بجودة عالية وبأسلوب إبداعي يلامس الجمهور. أستخدم برامج احترافية مثل Adobe Premiere Pro، After Effects، وDaVinci Resolve لصناعة محتوى بصري يعبر عن الفكرة ويوصل الرسالة بأفضل صورة ممكنة.
 
- <!-- about.html --><!DOCTYPE html>
-<html lang="ar">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>محمد بيومي | Video Editor</title>
-    <!-- ربط ملف الـ CSS -->
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-  
-    <!-- قسم التعريف (About Section) -->
-    <section id="about" class="about-section">
-      <img src="images/myphoto.jpg" alt="صورتي" class="profile-img">
-      
-      <h2 class="name-title">محمد بيومي | Video Editor</h2>
-      
-      <p class="about-description">
-        أُتقن فن المونتاج وتحويل الأفكار إلى فيديوهات جذّابة وملهمة. أعمل على تحرير الفيديوهات التعليمية، التسويقية، والتوثيقية بجودة عالية وبأسلوب إبداعي يلامس الجمهور. أستخدم برامج احترافية مثل Adobe Premiere Pro، After Effects، وDaVinci Resolve لصناعة محتوى بصري يعبر عن الفكرة ويوصل الرسالة بأفضل صورة ممكنة.<br><br>
-        أسعى دائمًا للتطوير المستمر، وأؤمن أن كل فيديو هو فرصة لصناعة قصة تُحكى بالصورة والصوت.
-      </p>
-    </section>
-  
-  </body>
-  </html>
-  
+      ،أسعى دائمًا للتطوير المستمر، وأؤمن أن كل فيديو هو فرصة لصناعة قصة تُحكى بالصورة والصوت
+    </p>
+  </section>
 
+  <!-- أعمالي -->
   <section id="works" class="works">
     <h2>أعمالي</h2>
     <div class="works-buttons">
       <a href="editing.html"><button>المونتاج</button></a>
       <button onclick="location.href='graphic.html'">الجرافيك</button>
       <a href="photography.html"><button>التصوير</button></a>
-    </div>      
+    </div>
   </section>
 
+  <!-- التقييمات -->
   <section id="reviews" class="reviews">
     <h2>آراء المتابعين</h2>
-    <!DOCTYPE html>
-    <html lang="ar">
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>سلايدر احترافي</title>
-      <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-      <div class="slider-container">
-        <div class="slider">
-          <div class="slide active">
-            <img src="images/review1.jpg" alt="صورة 1">
-            <div class="caption"></div>
-          </div>
-          <div class="slide">
-            <img src="images/review2.jpg" alt="صورة 2">
-            <div class="caption"></div>
-          </div>
-          <div class="slide">
-            <img src="images/review3.jpg" alt="صورة 3">
-            <div class="caption"></div>
-          </div>
-          <div class="slide">
-            <img src="images/review4.webp" alt="صورة 4">
-            <div class="caption"></div>
-          </div>
-          <div class="slide">
-            <img src="images/review5.png" alt="صورة 5">
-            <div class="caption"></div>
-          </div>
-          <div class="slide">
-            <img src="images/review6.jpg" alt="صورة 6">
-            <div class="caption"></div>
-          </div>
-          <div class="slide">
-            <img src="images/review7.jpg" alt="صورة 7">
-            <div class="caption"></div>
-          </div>
-          <div class="slide">
-            <img src="images/review8.jpg" alt="صورة 8">
-            <div class="caption"></div>
-          </div>
-    
-          <!-- الأسهم -->
-          <div class="navigation">
-            <button class="prev">&#10094;</button>
-            <button class="next">&#10095;</button>
-          </div>
-    
-          <!-- النقاط -->
-          <div class="dots">
-            <span class="dot active" data-index="0"></span>
-            <span class="dot" data-index="1"></span>
-            <span class="dot" data-index="2"></span>
-            <span class="dot" data-index="3"></span>
-            <span class="dot" data-index="4"></span>
-            <span class="dot" data-index="5"></span>
-            <span class="dot" data-index="6"></span>
-            <span class="dot" data-index="7"></span>
-          </div>
+    <div class="slider-container">
+      <div class="slider">
+        <!-- الشرائح -->
+        <div class="slide active"><img src="images/review1.jpg" alt=""></div>
+        <div class="slide"><img src="images/review2.jpg" alt=""></div>
+        <div class="slide"><img src="images/review3.jpg" alt=""></div>
+        <div class="slide"><img src="images/review4.webp" alt=""></div>
+        <div class="slide"><img src="images/review5.png" alt=""></div>
+        <div class="slide"><img src="images/review6.jpg" alt=""></div>
+        <div class="slide"><img src="images/review7.jpg" alt=""></div>
+        <div class="slide"><img src="images/review8.jpg" alt=""></div>
+
+        <!-- الأسهم -->
+        <div class="navigation">
+          <button class="prev">&#10094;</button>
+          <button class="next">&#10095;</button>
+        </div>
+
+        <!-- النقاط -->
+        <div class="dots">
+          <span class="dot active" data-index="0"></span>
+          <span class="dot" data-index="1"></span>
+          <span class="dot" data-index="2"></span>
+          <span class="dot" data-index="3"></span>
+          <span class="dot" data-index="4"></span>
+          <span class="dot" data-index="5"></span>
+          <span class="dot" data-index="6"></span>
+          <span class="dot" data-index="7"></span>
         </div>
       </div>
-      <script src="script.js"></script>
-    </body>
-    </html>
-    
+    </div>
   </section>
 
+  <!-- التواصل -->
   <section id="contact" class="contact">
     <h2>تواصل معي</h2>
-      <form action="https://formsubmit.co/mohamed115832@gmail.com" method="POST">
-        <input type="text" name="name" placeholder="الاسم" required>
-        <input type="email" name="email" placeholder="البريد الإلكتروني" required>
-        <input type="tel" name="phone" placeholder="رقم الهاتف" required>
-        <textarea name="message" placeholder="رسالتك" required></textarea>
-        
-        <input type="hidden" name="_next" value="https://mohamedmo555.github.io/mobayoumi10/thanks.html">
-        <input type="hidden" name="_captcha" value="false">
-        
-        <button type="submit">إرسال</button>
-      </form>       
+    <form action="https://formsubmit.co/mohamed115832@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="الاسم" required>
+      <input type="email" name="email" placeholder="البريد الإلكتروني" required>
+      <input type="tel" name="phone" placeholder="رقم الهاتف" required>
+      <textarea name="message" placeholder="رسالتك" required></textarea>
+      <input type="hidden" name="_next" value="https://mohamedmo555.github.io/mobayoumi10/thanks.html">
+      <input type="hidden" name="_captcha" value="false">
+      <button type="submit">إرسال</button>
+    </form>
   </section>
 
+  <!-- الفوتر -->
   <footer>
     <h3>تابعني على:</h3>
-    <div class="social-icons" style="margin-top: 30px;">
-      <a href="https://www.facebook.com/profile.php?id=61574807833473" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="40">
-      </a>
-      <a href="https://www.instagram.com/mobayoumi10/" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="40">
-      </a>
-      <a href="https://www.linkedin.com/in/%D9%85%D8%AD%D9%85%D8%AF-%D8%A8%D9%8A%D9%88%D9%85%D9%8A-217b1935a" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn" width="40">
-      </a>
-      <a href="https://wa.me/201044782206" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" width="40">
-      </a>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/profile.php?id=61574807833473" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="40"></a>
+      <a href="https://www.instagram.com/mobayoumi10/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="40"></a>
+      <a href="https://www.linkedin.com/in/%D9%85%D8%AD%D9%85%D8%AF-%D8%A8%D9%8A%D9%88%D9%85%D9%8A-217b1935a" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn" width="40"></a>
+      <a href="https://wa.me/201044782206" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" width="40"></a>
     </div>
-    
     <p>© 2025 Mo.Bayoumi - جميع الحقوق محفوظة</p>
   </footer>
 
+  <!-- سكريبت المينيو -->
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("menu");
+      menu.style.display = (menu.style.display === "none" || menu.style.display === "") ? "block" : "none";
+    }
+  </script>
+
+  <!-- سكريبت السلايدر -->
   <script>
     let slides = document.querySelectorAll('.slide');
+    let dots = document.querySelectorAll('.dot');
     let index = 0;
-    setInterval(() => {
-      slides[index].classList.remove('active');
+
+    function showSlide(i) {
+      slides.forEach((slide, idx) => {
+        slide.classList.remove('active');
+        dots[idx].classList.remove('active');
+      });
+      slides[i].classList.add('active');
+      dots[i].classList.add('active');
+    }
+
+    document.querySelector('.next').onclick = () => {
       index = (index + 1) % slides.length;
-      slides[index].classList.add('active');
-    }, 1000);
+      showSlide(index);
+    };
+
+    document.querySelector('.prev').onclick = () => {
+      index = (index - 1 + slides.length) % slides.length;
+      showSlide(index);
+    };
+
+    dots.forEach(dot => {
+      dot.addEventListener('click', () => {
+        index = +dot.dataset.index;
+        showSlide(index);
+      });
+    });
+
+    setInterval(() => {
+      index = (index + 1) % slides.length;
+      showSlide(index);
+    }, 3000);
   </script>
 
 </body>
