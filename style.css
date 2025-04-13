@@ -1,6 +1,6 @@
 /* ========== الأساسيات ========== */
 :root {
-  --main-bg: #D4C9BE;
+  --main-bg: #d4c9be;
   --main-color: #4d2929;
   --accent: #123458;
   --hover-accent: #1976d2;
@@ -8,7 +8,7 @@
   --header-text: #fff;
   --btn-bg: #2c3e50;
   --btn-text: #fff;
-  --gold: #daa520;
+  --gold: #d4c9be;
   --highlight: #e22d2d;
   --blog-header-bg: #2c3e50;
 }
@@ -353,4 +353,19 @@ header .logo-container p {
   width: 55px;
   height: 55px;
   border-radius: 50%;
+}
+.back-button {
+  background-color: #3498db; /* لون أزرق ناعم */
+  color: #fff; /* لون الخط */
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.back-button:hover {
+  background-color: #2980b9; /* أغمق عند التحويم */
+  transform: scale(1.05);
 }
