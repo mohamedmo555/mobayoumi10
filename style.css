@@ -28,6 +28,7 @@ header {
   padding: 20px;
   text-align: center;
 }
+
 header a {
   color: #ffd700;
   text-decoration: none;
@@ -41,6 +42,7 @@ header a {
   padding: 50px 20px;
   background-color: var(--main-bg);
 }
+
 .profile-img {
   width: 350px;
   height: 350px;
@@ -48,10 +50,12 @@ header a {
   object-fit: cover;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
+
 .name-title {
   font-size: 30px;
   margin-bottom: 12px;
 }
+
 .about-description {
   max-width: 750px;
   margin: auto;
@@ -66,6 +70,7 @@ header a {
   text-align: center;
   margin-bottom: 20px;
 }
+
 .sidebar ul {
   list-style: none;
   padding: 0;
@@ -75,6 +80,7 @@ header a {
   gap: 15px;
   margin: 0;
 }
+
 .sidebar ul li a {
   color: var(--main-color);
   text-decoration: none;
@@ -82,6 +88,7 @@ header a {
   border-radius: 6px;
   transition: background 0.3s;
 }
+
 .sidebar ul li a:hover {
   background-color: #ccc;
 }
@@ -94,6 +101,7 @@ header a {
   gap: 10px;
   margin-top: 20px;
 }
+
 .works-buttons button {
   background-color: var(--accent);
   color: #000;
@@ -104,6 +112,7 @@ header a {
   cursor: pointer;
   transition: 0.3s;
 }
+
 .works-buttons button:hover {
   background-color: var(--hover-accent);
 }
@@ -117,20 +126,25 @@ header a {
   border-radius: 15px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
+
 .slider {
   position: relative;
 }
+
 .slide {
   display: none;
   text-align: center;
 }
+
 .slide.active {
   display: block;
 }
+
 .slide img {
   width: 100%;
   height: auto;
 }
+
 .caption {
   background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
@@ -141,6 +155,7 @@ header a {
   text-align: center;
   font-size: 18px;
 }
+
 .navigation {
   position: absolute;
   top: 50%;
@@ -149,6 +164,7 @@ header a {
   justify-content: space-between;
   transform: translateY(-50%);
 }
+
 .navigation button {
   background-color: rgba(0,0,0,0.5);
   color: white;
@@ -158,10 +174,12 @@ header a {
   cursor: pointer;
   border-radius: 4px;
 }
+
 .dots {
   text-align: center;
   padding: 10px 0;
 }
+
 .dot {
   width: 10px;
   height: 10px;
@@ -171,6 +189,7 @@ header a {
   display: inline-block;
   cursor: pointer;
 }
+
 .dot.active {
   background-color: #717171;
 }
@@ -183,11 +202,14 @@ header a {
   max-width: 500px;
   margin: auto;
 }
-form input, form textarea {
+
+form input,
+form textarea {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 6px;
 }
+
 form button {
   background: var(--btn-bg);
   color: var(--btn-text);
@@ -203,6 +225,7 @@ footer {
   padding: 20px;
   background: var(--main-bg);
 }
+
 .social-icons a {
   color: #333;
   margin: 0 10px;
@@ -216,11 +239,13 @@ footer {
   padding: 15px;
   text-align: center;
 }
+
 .blog-container {
   padding: 20px;
   max-width: 900px;
   margin: auto;
 }
+
 .blog-post {
   background: var(--highlight);
   padding: 20px;
@@ -228,9 +253,11 @@ footer {
   border-radius: 12px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
+
 .blog-post h2 {
   color: var(--blog-header-bg);
 }
+
 .back-btn {
   background: #3498db;
   padding: 10px;
@@ -250,9 +277,11 @@ footer {
   gap: 20px;
   padding: 20px;
 }
+
 .videos-grid {
   background-color: var(--gold);
 }
+
 .video-wrapper {
   position: relative;
   padding-bottom: 56.25%;
@@ -262,6 +291,7 @@ footer {
   box-shadow: 0 4px 16px rgba(0,0,0,0.2);
   background: #000;
 }
+
 .video-wrapper iframe {
   position: absolute;
   top: 0;
@@ -271,6 +301,7 @@ footer {
   border: none;
   border-radius: 16px;
 }
+
 .works-grid img,
 .photos-grid img {
   width: 100%;
@@ -283,10 +314,12 @@ footer {
   .videos-grid {
     padding: 10px;
   }
+
   header {
     font-size: 16px;
   }
 }
+
 header {
   background-color: #123458;
   color: #f1efec;
@@ -328,6 +361,7 @@ header .logo-container p {
   padding: 10px;
   min-width: 150px;
 }
+
 .whatsapp-float {
   position: fixed;
   width: 55px;
@@ -354,9 +388,10 @@ header .logo-container p {
   height: 65px;
   border-radius: 50%;
 }
+
 .back-button {
-  background-color: #3498db; /* لون أزرق ناعم */
-  color: #fff; /* لون الخط */
+  background-color: #3498db;
+  color: #fff;
   padding: 8px 16px;
   border-radius: 8px;
   text-decoration: none;
@@ -366,8 +401,18 @@ header .logo-container p {
 }
 
 .back-button:hover {
-  background-color: #2980b9; /* أغمق عند التحويم */
+  background-color: #2980b9;
   transform: scale(1.05);
+}
+
+/* إعداد عام */
+body {
+  margin: 0;
+  font-family: 'Cairo', sans-serif;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+  background-color: #f9f9f9;
 }
 /* إعداد عام */
 body {
