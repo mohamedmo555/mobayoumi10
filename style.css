@@ -369,79 +369,105 @@ header .logo-container p {
   background-color: #2980b9; /* أغمق عند التحويم */
   transform: scale(1.05);
 }
-.cv-container {
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background: #f4f4f4;
   direction: rtl;
+  color: #222;
+}
+
+.cv-container {
   display: flex;
+  flex-wrap: wrap;
   max-width: 1200px;
-  margin: 40px auto;
-  background: #fff;
-  box-shadow: 0 0 20px rgba(0,0,0,0.1);
-  border-radius: 15px;
-  overflow: hidden;
-  font-family: 'Cairo', sans-serif;
+  margin: auto;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.cv-left, .cv-right {
-  padding: 30px;
+.sidebar {
   flex: 1;
-}
-
-.cv-left {
-  background-color: #f9f9f9;
-  border-left: 5px solid #e67e22;
-}
-
-.cv-right {
-  background-color: #1a1a1a;
+  min-width: 250px;
+  background: #111;
   color: #fff;
+  padding: 20px;
 }
 
-.cv-left h1 {
-  color: #e67e22;
-  margin-bottom: 5px;
+.profile-img img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 4px solid #ff7f2a;
 }
 
-.cv-left h2 {
-  color: #555;
-  font-weight: normal;
+.sidebar h1 {
+  margin: 0;
+  font-size: 22px;
+  color: #ff7f2a;
+}
+
+.sidebar .job-title {
+  font-size: 16px;
+  color: #aaa;
   margin-bottom: 20px;
 }
 
-.cv-left h3, .cv-right h3 {
-  color: #e67e22;
-  margin-top: 20px;
-  border-bottom: 1px solid #ddd;
+.sidebar h2 {
+  font-size: 18px;
+  color: #ff7f2a;
+  border-bottom: 1px solid #ff7f2a;
   padding-bottom: 5px;
+  margin-top: 25px;
 }
 
-.cv-left p, .cv-right p, ul {
-  font-size: 15px;
-  line-height: 1.6;
+.sidebar ul {
+  list-style: none;
+  padding: 0;
 }
 
-.cv-left ul, .cv-right ul {
-  padding-right: 20px;
+.sidebar ul li {
+  margin-bottom: 8px;
+}
+
+.content {
+  flex: 3;
+  min-width: 300px;
+  padding: 30px;
+}
+
+.content h2 {
+  font-size: 20px;
+  color: #ff7f2a;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  margin-top: 25px;
+}
+
+.content ul {
   list-style: disc inside;
+  margin: 10px 0;
 }
 
 .certificates {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 15px;
   margin-top: 10px;
 }
 
 .certificates img {
-  width: 150px;
-  border-radius: 6px;
-  border: 2px solid #fff;
-  box-shadow: 0 0 5px rgba(255,255,255,0.3);
+  width: 200px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
 }
 
-.profile-pic img {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  border: 4px solid #e67e22;
-  margin-bottom: 20px;
+@media screen and (max-width: 768px) {
+  .cv-container {
+    flex-direction: column;
+  }
+
+  .certificates img {
+    width: 100%;
+  }
 }
